@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Village</title>
+    <style>
+      .right{ float: right; }
+      </style>
+    </head>
+  <body>
+    <div id="sphere" style="width: 100%; height: 600px;"></div>
+    <script type="text/javascript" src="three.min.js"></script>
+    <script async="true" onload="setup();" type="text/javascript" src="sphere.js"></script>
+    <script type="text/javascript">
+      function setup(){
+        new Photosphere("PANO_20140528_111953.jpg").loadPhotosphere(document.getElementById("sphere"));
+      }
+      </script>
+    </body>
+</html>
